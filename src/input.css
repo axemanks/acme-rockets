@@ -7,4 +7,13 @@
     .section-min-height {
         min-height: calc(100vh - 68px);
     }
+
+    /* My custom class */
+    /* [&>div] is middle - [&>div::before] top- [&>div::after]-bottom*/
+    /* Middle goes transparent as top and bottom rotate 45 */
+    /* Finally added  [&>div]:rotate-[360deg] for spin */
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[360deg]
+    }
 }
+/* https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply */

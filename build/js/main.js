@@ -5,7 +5,8 @@ const initApp = () => {
     // toggle the two class attributes hidden and flex to show/hide the menu
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden')
-        mobileMenu.classList.toggle('flex')    
+        mobileMenu.classList.toggle('flex')
+        hamburgerBtn.classList.toggle('toggle-btn')
     }
     // add event listener to hamburgerBtn
     hamburgerBtn.addEventListener('click', toggleMenu)
